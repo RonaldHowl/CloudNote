@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-- 选择笔记类型 --"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/add_rg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add_rb_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_note_32dp_checked"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="新建文本" />
+
+        <RadioButton
+            android:id="@+id/add_rb_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_voice_32dp_checked"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="语音文本" />
+
+        <RadioButton
+            android:id="@+id/add_rb_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_picture_32dp_checked"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="上传图片" />
+
+        <RadioButton
+            android:id="@+id/add_rb_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_video_32dp_checked"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="视频速录" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add_btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#888888"
+        android:gravity="center"
+        android:text="取  消"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

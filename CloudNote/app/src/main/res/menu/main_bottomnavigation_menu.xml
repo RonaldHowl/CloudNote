@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_btn_home"
+        android:icon="@drawable/selector_ic_note"
+        android:title="笔记"></item>
+
+
+    <item
+        android:id="@+id/main_btn_add"
+        android:icon="@drawable/ic_add_32dp"
+        android:title="@null"></item>
+
+    <item
+        android:id="@+id/main_btn_my"
+        android:icon="@drawable/selector_ic_my"
+        android:title="我的"></item>
+</menu>

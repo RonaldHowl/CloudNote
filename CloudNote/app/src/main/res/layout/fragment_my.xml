@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#888888"
+        android:gravity="center"
+        android:text="我 的"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/my_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#888888">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_iv_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_my_32dp_checked" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Ronald"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/my_tv_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="15625780475"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_go_32dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#c7c7c7"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="自动同步"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/my_btn_synchronous"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_my_togglebtn"
+            android:checked="true"
+            android:textOff="@null"
+            android:textOn="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="仅在WIFI下自动同步"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/my_btn_wifi"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_my_togglebtn"
+            android:checked="true"
+            android:textOff="@null"
+            android:textOn="@null" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#c7c7c7"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="关于软件"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_tv_advice"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="检查更新"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#c7c7c7"></View>
+
+    <Button
+        android:id="@+id/my_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+
+</LinearLayout>
